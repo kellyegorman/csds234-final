@@ -37,3 +37,10 @@ initial_non_nan_values = df.count().sum()
 df_cleaned = df.dropna()
 final_non_nan_values = df_cleaned.count().sum()
 print(f"number of non-null products: {final_non_nan_values}")
+
+
+# unique group
+unique_groups = df['group'].dropna().unique().tolist()
+# show
+print(f"Unique values in 'group' column: {unique_groups}")
+
